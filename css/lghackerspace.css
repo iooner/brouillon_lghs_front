@@ -1,0 +1,33 @@
+body{
+    background: linear-gradient(45deg,transparent 34%, #d8d8d8 35%, #d8d8d8 40%, transparent 41%, transparent 59%, #d8d8d8  60%, #d8d8d8 65%, transparent 66%),linear-gradient(135deg,transparent 34%, #d8d8d8 35%, #d8d8d8 40%, transparent 41%, transparent 59%, #d8d8d8  60%, #d8d8d8 65%, transparent 66%);
+    background-size: 3em 3em;
+    background-color: #eeeeee;
+}
+.container {
+    background-color: white;
+}
+#logo
+{
+	background:url(../assets/logolghsblack.svg) no-repeat center center;
+	height: 190px;
+	margin: 2rem auto 0 auto;
+}
+#titre{
+    margin-top: 1rem;
+    font-size: 2em;
+    text-align: center;
+}
+#sous-titre{
+    margin-top: -1.2rem;
+    font-size: 1.2em;
+    text-align: center;
+}
+hr.hrlghs {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+.navbar-list ul{
+    list-style: none;
+}
