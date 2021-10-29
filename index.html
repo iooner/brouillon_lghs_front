@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/lghackerspace.css">
     <link rel="icon" type="image/png" href="assets/favicon.png">
-
+    <!-- A passer en local -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   </head>
   <body>
       <div class="container">
@@ -68,15 +70,22 @@
             </li>
           </ul>
         </div>
-        <div class="two-thirds column">Leaflet map</div>
+        <div class="two-thirds column">
+          <div id="map" style="width: 100%; height: 400px;"></div>
+        </div>
       </div>
-
     </div>
   </body>
 
-
-
-
-
+<script>
+    var map = L.map('map').setView([50.641923891121586, 5.589975133326972], 14);
+    L.tileLayer('https://tile.openstreetmap.be/osmbe/{z}/{x}/{y}.png', {
+        attribution:
+            '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors' +
+            ', Tiles courtesy of <a href="https://geo6.be/">GEO-6</a>',
+        maxZoom: 18
+    }).addTo(map);
+    var marker = L.marker([50.641923891121586, 5.589975133326972]).addTo(map);
+</script>
 
 </html>
