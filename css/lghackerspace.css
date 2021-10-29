@@ -5,29 +5,45 @@ body{
 }
 .container {
     background-color: white;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 #logo
 {
 	background:url(../assets/logolghsblack.svg) no-repeat center center;
 	height: 190px;
-	margin: 2rem auto 0 auto;
+	margin: 1rem auto 0 auto;
 }
 #titre{
     margin-top: 1rem;
     font-size: 2em;
+    letter-spacing: +0.2rem;
     text-align: center;
 }
-#sous-titre{
+#lms{
     margin-top: -1.2rem;
+    letter-spacing: +0.1rem;
     font-size: 1.2em;
     text-align: center;
+}
+.sous-titre{
+    letter-spacing: +0.1rem;
+    font-size: 1.6em;
+    font-weight: 600;
 }
 hr.hrlghs {
     border: 0;
     height: 0;
+    width: 80%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
-.navbar-list ul{
+ul.navbar-list{
     list-style: none;
+    display: block;
+    text-align: center;
+    font-size: 1.2em; 
+}
+ul.navbar-list li{
+    display: inline-block;
 }
